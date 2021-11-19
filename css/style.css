@@ -8,7 +8,7 @@ body {
 }
 .container{
     width:1080px;
-    margin: 0 auto;
+    margin: auto auto;
 }
 .page-header{
     display:flex;
