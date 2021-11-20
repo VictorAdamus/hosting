@@ -12,19 +12,19 @@
         <img src="images/LogoColor.svg" alt="logo">
     </div>
     <ul class="navigation">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Blog</a></li>
+        <li class="navig"><a class="nav" href="#">Home</a></li>
+        <li class="navig"><a class="nav" href="#">Features</a></li>
+        <li class="navig"><a class="nav" href="#">Pricing</a></li>
+        <li class="navig"><a class="nav" href="#">Blog</a></li>
     </ul>
-    <button  class="btn-started" >Get Started</button>
+    <a href="#tarif"><button  class="btn-started" >Get Started</button></a>
 </div>
 <div class="hero">
     <div class="hero-text">
         <h1>Grow your subscription business</h1>
-        <p>Outcome-centered products that reduce churn, optimize pricing, and grow your subscription business end-to-end.</p>
-        <button  class="btn-started">Get Started</button>
-        <img src="images/arrow-down.svg" alt="arrow down">
+        <p class="simple">Outcome-centered products that reduce churn,<br> optimize pricing, and grow your subscription<br> business end-to-end.</p>
+        <a href="#tarif"><button  class="btn-started violet">Get Started</button></a>
+       <img src="images/arrow-down.svg" class="arrow" alt="arrow down">
     </div>
     <div class="hero-image">
         <img src="images/Hero3D.png" alt="hero man">
@@ -43,15 +43,15 @@
     </div>
     <div class="subscription-text">
         <h2>Subscription index</h2>
-        <p>A daily dataset to keep you up to date on subscription market trends and what's happening in your vertical.</p>
-        <a href="#" >Learn more</a>
+        <p class="simple">A daily dataset to keep you up to date on<br> subscription market trends and what's happening in<br> your vertical.</p>
+        <a class="more" href="#" >Learn more</a>
     </div>
 </div>
 <div class="metrics">
     <div class="metrics-text">
         <h2>In-depth metrics</h2>
-        <p>Accurate, real-time reporting at your fingertips. Getting data has never been easier.</p>
-        <a href="#">Learn more</a>
+        <p class="simple">Accurate, real-time reporting at your fingertips.<br> Getting data has never been easier.</p>
+        <a class="more" href="#">Learn more</a>
     </div>
     <div class="metrics-image">
         <img src="images/ContentImage.png" alt="men">
@@ -61,47 +61,51 @@
     <div class="card-item">
         <img src="images/Card.png" alt="card">
         <h3> Benchmarks</h3>
-        <p> See how you stack up against comparable <br>companies in similar stages. </p>
+        <p class="simple"> See how you stack up against comparable <br>companies in similar stages. </p>
     </div>
     <div class="card-item">
         <img src="images/Calculator.png" alt="calculator">
         <h3>Pricing Audit</h3>
-        <p> Benchmark the health of your monetization<br> and pricing strategy. </p>
+        <p class="simple"> Benchmark the health of your monetization<br> and pricing strategy. </p>
     </div>
     <div class="card-item">
         <img src="images/Camera.png" alt="camera">
         <h3>Retention Audit</h3>
-        <p> Audit where revenue leakage exists and<br> where you can increase retention.</p>
+        <p class="simple"> Audit where revenue leakage exists and<br> where you can increase retention.</p>
     </div>
 </div>
-<div class="tarif">
-    <h1 class="tarif-title">Get the right plan <br>for future product. </h1>
-    <div class="select-plan">
+<div class="tarif" id="tarif">
+    <div class="tarif-header">
+     <div class="tarif-title">
+      <h1>Get the right plan <br>for future product. </h1>
+     </div>
+     <div class="select-plan">
         <button class="choice" id="yearly">Yearly</button>
         <button class="choice" id="monthly">Monthly</button>
+     </div>
     </div>
     <div class="plans">
-    <div class="plan-item">
+     <div class="plan-item">
         <div class="plan-text">
             <p>Started</p>
             <h3>Free</h3>
-            <p>1 Website <br>5 GB Hosting <br>Limited Support</p>
+            <p class="simple">1 Website <br>5 GB Hosting <br>Limited Support</p>
         </div>
         <button class="btn-plan Starter">Get Started</button>
-    </div>
+     </div>
     <div class="plan-item">
         <div class="plan-text">
             <p>Premium</p>
-            <h3>$29/month</h3>
-            <p>10 Website <br>15 GB Hosting <br>Premium Support</p>
+            <h3>$29/<span class="min">month</span></h3>
+            <p class="simple">10 Website <br>15 GB Hosting <br>Premium Support</p>
         </div>
         <button class="btn-plan Premium">Get Started</button>
     </div>
     <div class="plan-item">
         <div class="plan-text">
             <p>Enterprise</p>
-            <h3>$49/month</h3>
-            <p>Unlimited Website <br>50 GB Hosting <br>Premium Support</p>
+            <h3>$49/<span class="min">month</span></h3>
+            <p class="simple">Unlimited Website <br>50 GB Hosting <br>Premium Support</p>
         </div>
         <button class="btn-plan Enterprise">Get Started</button>
     </div>
