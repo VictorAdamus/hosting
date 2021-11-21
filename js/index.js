@@ -1,8 +1,10 @@
 let tarifPlans = document.getElementById("tarif");
-let startSmooth = document.querySelector(".btn-started");
-let startSmoothClick =function () {
-    tarifPlans.scrollIntoView({block: "center", behavior: "smooth"});}
-startSmooth.addEventListener('click', startSmoothClick);
+let startSmooths = document.querySelectorAll(".btn-started");
+for(let startSmooth of startSmooths ) {
+    startSmooth.addEventListener('click', function () {
+        tarifPlans.scrollIntoView({block: "center", behavior: "smooth"});});
+}
+
 
 
 
