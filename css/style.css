@@ -204,7 +204,7 @@ h3{
     box-shadow:  0 0 10px  #5454D4;
     font-size:20px;
     background-color: #5454D4;
-    color: #FFFFFF;
+    color:#FFFFFF;
     transform: translateY(2px);
 }
 .choice:active{
