@@ -205,14 +205,18 @@ h3{
     font-size:20px;
     background-color: #5454D4;
     color: #FFFFFF;
+    transform: translateY(2px);
 }
 .choice:active{
     background-color: #FFFFFF;
     color:#5454D4;
 }
 .activated{
-    background-color: #FFFFFF;
-    color:#5454D4;
+    box-shadow:  0 0 10px  #5454D4;
+    font-size:20px;
+    background-color: #5454D4;
+    color: #FFFFFF;
+    transform: translateY(2px);
 }
 .choice:first-child{
     border-radius: 10px 0 0 10px;
@@ -228,7 +232,7 @@ h3{
 .plan-item:first-child{
     margin-left:0;
 }
-.plan-text h3{
+.price{
     font-family: DM Sans, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -243,7 +247,7 @@ h3{
 
 }
 
-.plan-text h3 .min{
+.price .min{
     font-size:28px;
 }
 .plan-text .simple:last-child{
