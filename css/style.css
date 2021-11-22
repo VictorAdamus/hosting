@@ -35,15 +35,19 @@ body {
 .navigation .navig .nav{
     color: #696871;
     transition-duration:0.6s;
+
 }
 .navigation .navig .nav:hover{
     font-size:20px;
     font-weight: bold;
-    filter: drop-shadow(0 0 10px grey)
+    filter: drop-shadow(0 0 10px grey);
+    transition: border 1ms;
+    border-bottom: 4px solid #696871;
 }
 .navigation .navig .nav:active{
     color: #FF7143;
-    filter: drop-shadow(0 0 10px #FF7143)
+    filter: drop-shadow(0 0 10px #FF7143);
+    border-bottom: 3px solid #FF7143;
 }
 
 .btn-started{
@@ -96,6 +100,11 @@ h1{
     border-radius: 50%;
     box-sizing: border-box;
     vertical-align: middle;
+    cursor: pointer;
+    transition-duration: 0.6s;
+}
+.arrow:hover{
+    box-shadow:  0 0 10px  black;
 }
 .hero-image{
     width:580px;
@@ -122,7 +131,6 @@ h1{
     font-size: 50px;
     line-height: 57px;
     letter-spacing: -1.56316px;
-    color: #19191B;
 }
  .simple {
     font-family: Mulish, sans-serif;
@@ -131,7 +139,6 @@ h1{
     font-size: 20px;
     line-height: 30px;
     letter-spacing: -0.625263px;
-    color: #696871;
 }
 .metrics {
     display:flex;
@@ -176,10 +183,6 @@ h3{
     line-height: 70px;
     letter-spacing: -1.87579px;
     color: #19191B;
-}
-.plans{
-    display:flex;
-    flex-wrap:wrap;
 }
 .select-plan{
     align-self:center;
@@ -227,10 +230,9 @@ h3{
 }
 .plans{
     display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
     margin-top:95px;
-}
-.plan-item:first-child{
-    margin-left:0;
 }
 .price{
     font-family: DM Sans, sans-serif;
@@ -240,10 +242,8 @@ h3{
     line-height: 56px;
     text-align: center;
     letter-spacing: -1.03448px;
-    color: #1D293F;
     padding:0;
-    margin: 0;
-    margin-bottom:28px;
+    margin: 0 0 28px 0;
 }
 .price .min{
     font-size:28px;
@@ -255,19 +255,20 @@ h3{
     font-size: 17px;
     line-height: 50px;
     letter-spacing: -0.531474px;
-    color: #696871;
     margin:0;
     padding:0;
 }
-.plan-item{
-    width: 330px;
+.plan-item {
     height: 441px;
-    text-align:center;
-    background-color:#F8F8F8;
-    border-radius:10px;
-    margin-left:25px;
+    width:330px;
+    text-align: center;
+    background-color: #F8F8F8;
+    border-radius: 10px;
     transition-duration: 0.6s;
     cursor: pointer;
+}
+.plan-item:first-child{
+    margin-left:0;
 }
 .plan-item:hover{
     width:350px;
@@ -287,9 +288,8 @@ h3{
 .btn-plan{
     width:285px;
     height:60px;
-    margin-bottom:27px;
+    margin-top:40px;
     background-color:#FFFFFF;
-    border: 1px solid #EAE9F2;
     border-radius: 10px;
     font-family: DM Sans, sans-serif;
     font-style: normal;
@@ -298,6 +298,7 @@ h3{
     line-height: 22px;
     text-align: center;
     letter-spacing: -0.531474px;
+    border:none;
     color: #5454D4;
     cursor: pointer;
     transition-duration:0.6s;
@@ -309,4 +310,15 @@ h3{
 .plan-item .btn-plan:active{
     background-color:white;
     color:#9F3919;
+}
+.active-plan{
+    width:350px;
+    height :461px;
+    background-color: #FF7143;
+    color:white;
+    transform:translateY(-10px);
+}
+.btn-active{
+    background-color: #9F3919;
+    color:white;
 }

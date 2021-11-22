@@ -17,14 +17,14 @@
         <li class="navig"><a class="nav" href="#">Pricing</a></li>
         <li class="navig"><a class="nav" href="#">Blog</a></li>
     </ul>
-    <button  class="btn-started" >Get Started</button>
+    <button  class="btn-started to-plans" >Get Started</button>
 </div>
 <div class="hero">
     <div class="hero-text">
         <h1>Grow your subscription business</h1>
         <p class="simple">Outcome-centered products that reduce churn,<br> optimize pricing, and grow your subscription<br> business end-to-end.</p>
-        <button  class="btn-started violet">Get Started</button>
-       <img src="images/arrow-down.svg" class="arrow" alt="arrow down">
+        <button  class="btn-started violet to-plans">Get Started</button>
+       <img src="images/arrow-down.svg" class="arrow to-plans" alt="arrow down">
     </div>
     <div class="hero-image">
         <img src="images/Hero3D.png" alt="hero man">
@@ -80,34 +80,34 @@
       <h1>Get the right plan <br>for future product. </h1>
      </div>
      <div class="select-plan">
-        <button class="choice choice1" id="yearly">Yearly</button>
+        <button class="choice choice1 activated" id="yearly">Yearly</button>
         <button class="choice choice2" id="monthly">Monthly</button>
      </div>
     </div>
     <div class="plans">
-     <div class="plan-item">
+     <div class="plan-item" id="started">
         <div class="plan-text">
             <p class="name-start">Started</p>
             <h3 class="price price-free">Free</h3>
             <p class="simple">1 Website <br>5 GB Hosting <br>Limited Support</p>
         </div>
-        <button class="btn-plan Starter">Get Started</button>
+        <button class="btn-plan Starter" id="Start">Get Started</button>
      </div>
-    <div class="plan-item">
+    <div class="plan-item active-plan" id="premium">
         <div class="plan-text">
             <p class="name-prem">Premium</p>
-            <h3 class="price">$<span class="price1">29</span> /<span class="min">month</span></h3>
+            <h3 class="price">$<span class="price-prem">29</span> /<span class="min">month</span></h3>
             <p class="simple">10 Website <br>15 GB Hosting <br>Premium Support</p>
         </div>
-        <button class="btn-plan Premium">Get Started</button>
+        <button class="btn-plan Premium btn-active" id="Prem">Get Started</button>
     </div>
-    <div class="plan-item">
+    <div class="plan-item" id="enterprise">
         <div class="plan-text">
             <p class="name-enter">Enterprise</p>
-            <h3 class="price">$<span class="price2">49</span> /<span class="min">month</span></h3>
+            <h3 class="price">$<span class="price-enter">49</span> /<span class="min">month</span></h3>
             <p class="simple">Unlimited Website <br>50 GB Hosting <br>Premium Support</p>
         </div>
-        <button class="btn-plan Enterprise">Get Started</button>
+        <button class="btn-plan Enterprise" id="Enter">Get Started</button>
     </div>
     </div>
 </div>
