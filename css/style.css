@@ -17,7 +17,7 @@ body {
     margin-top:40px;
     justify-content: space-between;
 }
-.navigation {
+.page_header_navigation {
     display:flex;
     flex:1;
     justify-content: space-evenly;
@@ -93,7 +93,7 @@ h1{
     padding:0;
     letter-spacing: -2.5px;
 }
-.arrow{
+.hero_image_arrow{
     padding: 18.75px 19.5px 18.75px 19.5px;
     margin-left:40px;
     border: 1px solid #E7E7E7;
@@ -103,14 +103,14 @@ h1{
     cursor: pointer;
     transition-duration: 0.6s;
 }
-.arrow:hover{
+.hero_image_arrow:hover{
     box-shadow:  0 0 10px  black;
 }
-.hero-image{
+.hero_image{
     width:580px;
     height: 644px;
 }
-.logo_images{
+.logos{
     display:flex;
     justify-content: space-between;
     margin-top:100px;
@@ -155,7 +155,7 @@ h1{
     vertical-align: center;
 
 }
-.card_item{
+.cards_item{
     text-align: center;
 }
 h3{
@@ -184,10 +184,10 @@ h3{
     letter-spacing: -1.87579px;
     color: #19191B;
 }
-.select_plan{
+.tariff_select_plan{
     align-self:center;
 }
-.choice{
+.btn_choice{
     width:160px;
     height:55px;
     font-family: DM Sans, sans-serif;
@@ -203,14 +203,14 @@ h3{
     cursor: pointer;
     transition-duration: 0.6s;
 }
-.choice:hover{
+.btn_choice:hover{
     box-shadow:  0 0 10px  #5454D4;
     font-size:20px;
     background-color: #5454D4;
     color:#FFFFFF;
     transform: translateY(2px);
 }
-.choice:active{
+.btn_choice:active{
     background-color: #FFFFFF;
     color:#5454D4;
 }
@@ -221,10 +221,10 @@ h3{
     color: #FFFFFF;
     transform: translateY(2px);
 }
-.choice_one{
+.btn_choice_one{
     border-radius: 10px 0 0 10px;
 }
-.choice_two{
+.btn_choice_two{
     border-radius: 0 10px 10px 0;
     margin-left: -5px;
 }

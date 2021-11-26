@@ -4,16 +4,11 @@ for(let startSmooth of startSmooths ) {
     startSmooth.addEventListener('click', function () {
         tariffPlan.scrollIntoView({block: "center", behavior: "smooth"});});
 }
-
-
-
-
-
 let pricePrem=document.querySelector('.price_prem');
 let priceEnter=document.querySelector('.price_enter');
-let choices=document.querySelectorAll('.choice');
-let choiceOne=document.querySelector('.choice_one');
-let choiceTwo=document.querySelector('.choice_two');
+let choices=document.querySelectorAll('.btn_choice');
+let choiceOne=document.querySelector('.btn_choice_one');
+let choiceTwo=document.querySelector('.btn_choice_two');
 for(let choice of choices){
     choice.addEventListener('click', function (e){
         if (e.target.textContent==="Yearly"){
@@ -45,9 +40,9 @@ for (let pricePlan of pricePlans){
             console.log('Название тарифа: '+ nameFree.textContent);
             console.log('Цена за месяц: '+ priceFree.textContent);
             console.log('Цена за год: '+ priceFree.textContent);
-            document.querySelector('.starter').classList.add('btn_active');
-            document.querySelector('.premium').classList.remove('btn_active');
-            document.querySelector('.enterprise').classList.remove('btn_active');
+            document.querySelector('.btn_starter').classList.add('btn_active');
+            document.querySelector('.btn_premium').classList.remove('btn_active');
+            document.querySelector('.btn_enterprise').classList.remove('btn_active');
             startPlan.classList.add('active_plan');
             enterPlan.classList.remove('active_plan');
             premPlan.classList.remove('active_plan');
@@ -56,9 +51,9 @@ for (let pricePlan of pricePlans){
             console.log('Название тарифа: '+ namePrem.textContent);
             console.log('Цена за месяц: '+ pricePrem.textContent+'$');
             console.log('Цена за год: '+ Number(pricePrem.textContent)*12+'$');
-            document.querySelector('.premium').classList.add('btn-active');
-            document.querySelector('.starter').classList.remove('btn_active');
-            document.querySelector('.enterprise').classList.remove('btn_active');
+            document.querySelector('.btn_premium').classList.add('btn_active');
+            document.querySelector('.btn_starter').classList.remove('btn_active');
+            document.querySelector('.btn_enterprise').classList.remove('btn_active');
             premPlan.classList.add('active_plan');
             startPlan.classList.remove('active_plan');
             enterPlan.classList.remove('active_plan');
@@ -67,9 +62,9 @@ for (let pricePlan of pricePlans){
             console.log('Название тарифа: '+ nameEnter.textContent);
             console.log('Цена за месяц: '+ priceEnter.textContent+'$');
             console.log('Цена за год: '+ Number(priceEnter.textContent)*12+'$');
-            document.querySelector('.enterprise').classList.add('btn_active');
-            document.querySelector('.premium').classList.remove('btn_active');
-            document.querySelector('.starter').classList.remove('btn_active');
+            document.querySelector('.btn_enterprise').classList.add('btn_active');
+            document.querySelector('.btn_premium').classList.remove('btn_active');
+            document.querySelector('.btn_starter').classList.remove('btn_active');
             enterPlan.classList.add('active_plan');
             startPlan.classList.remove('active_plan');
             premPlan.classList.remove('active_plan');
