@@ -12,7 +12,7 @@ body {
     padding:0 185px;
     box-sizing:border-box;
 }
-.page-header{
+.page_header{
     display:flex;
     margin-top:40px;
     justify-content: space-between;
@@ -32,25 +32,25 @@ body {
     font-weight: bold;
     filter: drop-shadow(0 0 5px #5454D4);
 }
-.navigation .navig .nav{
+.nav{
     color: #696871;
     transition-duration:0.6s;
 
 }
-.navigation .navig .nav:hover{
+.nav:hover{
     font-size:20px;
     font-weight: bold;
     filter: drop-shadow(0 0 10px grey);
     transition: border 1ms;
     border-bottom: 4px solid #696871;
 }
-.navigation .navig .nav:active{
+.nav:active{
     color: #FF7143;
     filter: drop-shadow(0 0 10px #FF7143);
     border-bottom: 3px solid #FF7143;
 }
 
-.btn-started{
+.btn_started{
     width:211px;
     height:60px;
     border:none;
@@ -61,12 +61,12 @@ body {
     cursor: pointer;
     transition-duration: 0.6s;
 }
-.btn-started:hover{
+.btn_started:hover{
     font-size:20px;
     box-shadow:  0 0 10px  #FF7143;
     font-weight: bold;
 }
-.btn-started:active{
+.btn_started:active{
     background-color: #FFFFFF;
     color: #FF7143;
 }
@@ -110,7 +110,7 @@ h1{
     width:580px;
     height: 644px;
 }
-.logotips{
+.logo_images{
     display:flex;
     justify-content: space-between;
     margin-top:100px;
@@ -120,7 +120,7 @@ h1{
     display:flex;
     align-items: center;
 }
-.subscription-image{
+.subscription_image{
     width:350px;
     margin-right: 165px;
 }
@@ -146,7 +146,7 @@ h1{
     margin-top:80px;
     margin-bottom:150px;
 }
-.metrics-image{
+.metrics_image{
     margin-left:220px;
 }
 .cards{
@@ -155,7 +155,7 @@ h1{
     vertical-align: center;
 
 }
-.card-item{
+.card_item{
     text-align: center;
 }
 h3{
@@ -166,15 +166,15 @@ h3{
     line-height: 36px;
     letter-spacing: -0.750316px;
 }
-.tarif{
+.tariff{
     margin-top:150px;
     margin-bottom: 100px;
 }
-.tarif-heading{
+.tariff_heading{
     display:flex;
     justify-content: space-between;
 }
-.tarif-title h1{
+ h1{
     font-family: DM Sans, sans-serif;
     width:523px;
     font-style: normal;
@@ -184,7 +184,7 @@ h3{
     letter-spacing: -1.87579px;
     color: #19191B;
 }
-.select-plan{
+.select_plan{
     align-self:center;
 }
 .choice{
@@ -221,10 +221,10 @@ h3{
     color: #FFFFFF;
     transform: translateY(2px);
 }
-.choice:first-child{
+.choice_one{
     border-radius: 10px 0 0 10px;
 }
-.choice:last-child{
+.choice_two{
     border-radius: 0 10px 10px 0;
     margin-left: -5px;
 }
@@ -248,7 +248,7 @@ h3{
 .price .min{
     font-size:28px;
 }
-.plan-text .simple:last-child{
+.plan_text .simple:last-child{
     font-family: Mulish,sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -258,7 +258,7 @@ h3{
     margin:0;
     padding:0;
 }
-.plan-item {
+.plan_item {
     height: 441px;
     width:330px;
     text-align: center;
@@ -267,25 +267,25 @@ h3{
     transition-duration: 0.6s;
     cursor: pointer;
 }
-.plan-item:first-child{
+.plan_item:first-child{
     margin-left:0;
 }
-.plan-item:hover{
+.plan_item:hover{
     width:350px;
     height :461px;
     color:white;
     background-color: #FF7143;
     transform:translateY(-10px);
 }
-.plan-item:hover .simple,
-.plan-item:hover h3{
+.plan_item:hover .simple,
+.plan_item:hover h3{
     color:white;
 }
-.plan-item:hover .btn-plan{
+.plan_item:hover .btn_plan{
     background-color: #9F3919;
     color:white;
 }
-.btn-plan{
+.btn_plan{
     width:285px;
     height:60px;
     margin-top:40px;
@@ -303,22 +303,22 @@ h3{
     cursor: pointer;
     transition-duration:0.6s;
 }
-.btn-plan:hover{
+.btn_plan:hover{
     box-shadow: 0 0 10px  black;
     font-size:21px;
 }
-.plan-item .btn-plan:active{
+.plan_item .btn_plan:active{
     background-color:white;
     color:#9F3919;
 }
-.active-plan{
+.active_plan{
     width:350px;
     height :461px;
     background-color: #FF7143;
     color:white;
     transform:translateY(-10px);
 }
-.btn-active{
+.btn_active{
     background-color: #9F3919;
     color:white;
 }
